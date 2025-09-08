@@ -1,0 +1,12 @@
+accelerate launch run_text_classification_no_trainer.py \
+    --model_name_or_path intfloat/multilingual-e5-base \
+    --train_file emotion_train_ukr.json \
+    --validation_file emotion_test_ukr.json \
+    --max_length 128 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 32 \
+    --learning_rate 3e-4 \
+    --num_train_epochs 10 \
+    --output_dir model \
+    --weight_decay 0.01 \
+    --seed 42

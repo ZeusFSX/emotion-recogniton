@@ -1,0 +1,9 @@
+tqdm~=4.67.1
+transformers~=4.56.1
+huggingface-hub~=0.34.4
+shap~=0.48.0
+torch
+matplotlib
+notebook
+gradio
+accelerate
